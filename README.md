@@ -5,7 +5,7 @@ experimentation with Spring Boot + Keycloak + HAL Explorer.
 
 <ol>
 <li>
-How is returned a 401 status code with content type application/prs.hal-forms+json and proper payload, the HAL
+When is returned a 401 status code with content type application/prs.hal-forms+json and proper payload, the HAL
    Explorer will not display the Links and HAL-FORMS Template Elements sections on the left.
 
 <details>
@@ -18,6 +18,12 @@ How is returned a 401 status code with content type application/prs.hal-forms+js
 <li>
 The HTTP Request Input form could render properly the "Body" with the Content Type application/x-www-form-urlencoded.
    Currently, it is always rendered as json. Should be rendered as an url encoded string.
+
+The expected result in the Body textarea would be:
+
+```
+client_id=api&client_secret=abc123&username=foo&password=bar&grant_type=password
+```
 
 <details>
 <summary>See the image.</summary>
