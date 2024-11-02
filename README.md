@@ -95,13 +95,13 @@ client_id=api&client_secret=abc123&username=foo&password=bar&grant_type=password
 Build the docker image.
 
 ```bash
-docker build -t hal-explorer-status-code-401 .
+docker build -t marciovmartins/hal-explorer-issue-1 .
 ```
 
 Create and run the container.
 
 ```bash
-docker run -p 8080:8080 hal-explorer-status-code-401
+docker run -p 8080:8080 marciovmartins/hal-explorer-issue-1
 ```
 
 </details>
